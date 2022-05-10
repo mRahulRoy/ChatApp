@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Heebo:wght@500&family=Inter&family=Irish+Grover&family=Josefin+Sans:ital,wght@1,300&family=Lato:ital,wght@1,300&family=Mukta:wght@400;500&family=Oswald:wght@300&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Rubik&family=Titillium+Web&family=Ubuntu:ital,wght@0,300;1,300;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+}
+img{
+    width: 25px;
+}
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .app-cont{
+    box-shadow: 2px 2px 8px black;
+    width: 50%;
+    height: 80%;
+    padding: 5px;
+    background-color: white;
+}
+.container .app-cont .header{
+    width: 100%;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    gap: 5px;
+}
+.container .app-cont .header h2{
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.container .app-cont .chatCont{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    height: 80%;
+    padding: 20px 5px 5px 5px;
+    background-color: antiquewhite;
+}
+.container .app-cont .chatCont .message{
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    max-width: 250px;
+    position: relative;
+    font-family: 'Mukta', sans-serif;
+}
+
+.container .app-cont .chatCont .message h2{
+    position: absolute;
+    top: -13px;
+    left: 0;
+    color: #333;
+    font-size: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.container .app-cont .chatCont .incoming{
+    background-color: #908be8d9;
+} 
+.container .app-cont .chatCont .outgoing{
+    margin-left: auto;
+    background-color: #e9eafd;
+
+} 
+
+
+.container .app-cont .textAreaCont #textarea{
+    width: 100%;
+    height: 36px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    background-color: #FBFBFB;
+    padding: 6px;
+    /* border: 1px solid; */
+    line-height: 24px;
+}
