@@ -41,7 +41,6 @@ img{
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-
     height: 80%;
     padding: 20px 5px 5px 5px;
     background-color: antiquewhite;
@@ -72,15 +71,34 @@ img{
 
 } 
 
-
+.container .app-cont .chatCont .message p{
+    word-wrap: break-word;
+}
 .container .app-cont .textAreaCont #textarea{
-    width: 100%;
+    width: 91%;
     height: 36px;
     outline: none;
     overflow: hidden;
+    resize: none;
     border: none;
     background-color: #FBFBFB;
     padding: 6px;
     /* border: 1px solid; */
     line-height: 24px;
+}
+.container .app-cont .textAreaCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    height: 52px;
+}
+
+/* media querries */
+@media (max-width:600px){
+
+    .container .app-cont{
+        width:100%;
+        height: 100%;
+    }
 }

@@ -1,18 +1,28 @@
+
 const socket = io();
 const chatContainer = document.querySelector(".chatCont");
 const textarea = document.querySelector("#textarea");
+const msgSendBtn =  document.querySelector("#sendBtn");
 let userName;
 do {
     userName = prompt("Enter Your Name : ");
 } while (!userName);
 
-textarea.addEventListener("keyup", (event) => {
-    if (event.key == "Enter") {
-        sendMessage(event.target.value);
-    }
-});
+msgSendBtn.addEventListener("click",()=>{
+    sendMessage(textarea.value);
+})
+
+
+// textarea.addEventListener("keyup", (event) => {
+//     if (event.key == "Enter") {
+//         sendMessage(event.target.value);
+//     }
+// });
 
 function sendMessage(msg) {
+    if(msg==""){
+        return;
+    }
     let msgObj = {
         user: userName,
         message: msg.trim(),
