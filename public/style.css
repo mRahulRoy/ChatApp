@@ -73,6 +73,7 @@ img{
 
 .container .app-cont .chatCont .message p{
     word-wrap: break-word;
+    font-size: 1.1rem;
 }
 .container .app-cont .textAreaCont #textarea{
     width: 91%;
