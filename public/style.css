@@ -62,6 +62,24 @@ img{
     font-size: 0.6rem;
     font-family: 'Roboto', sans-serif;
 }
+.container .app-cont .textAreaCont img{
+    transition: all;
+    cursor: pointer;
+    animation: move 1.5s infinite alternate-reverse;
+}
+
+@keyframes move {
+    0%{
+        transform: scale(.6);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+
+}
 .container .app-cont .chatCont .incoming{
     background-color: #908be8d9;
 } 
